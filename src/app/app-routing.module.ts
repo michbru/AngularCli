@@ -5,6 +5,7 @@ import {ProductsComponent} from './products/products.component';
 import {HomeComponent} from './home/home.component';
 import {SoonComponent} from './soon/soon.component';
 import {StepsComponent} from './steps/steps.component';
+import { SlideEditComponent } from './slide-edit/slide-edit.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'steps',
     component: StepsComponent
+  },
+  {
+    path: 'slide-edit',
+    component: SlideEditComponent,
   },
   { path: '**', component: SoonComponent }
 ];

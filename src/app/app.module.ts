@@ -7,19 +7,21 @@ import { DataFilterPipe } from './boot-table/data-filter.pipe'
 
 import { AppRoutingModule } from './app-routing.module';
 
+
 import { AppComponent } from './app.component';
 import { BootTableComponent } from './boot-table/boot-table.component';
-import { BootTableService } from './boot-table/boot-table.service';
+import { BootTableService } from './shared/boot-table.service';
 import { ProductsComponent } from './products/products.component';
 import { ProductsService } from './products/products.service';
 import { HomeComponent } from './home/home.component';
 import { SoonComponent } from './soon/soon.component';
 import { StepsComponent } from './steps/steps.component';
+import { SlideEditComponent } from './slide-edit/slide-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BootTableComponent,DataFilterPipe, ProductsComponent, HomeComponent, SoonComponent, StepsComponent
+    BootTableComponent,DataFilterPipe, ProductsComponent, HomeComponent, SoonComponent, StepsComponent, SlideEditComponent
   ],
   imports: [
     BrowserModule,

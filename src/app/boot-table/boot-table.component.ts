@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import {Http} from "@angular/http";
-import { Applicant } from './applicant';
-import { BootTableService } from './boot-table.service';
+
+import { Applicant } from '../shared/applicant';
+import { BootTableService } from '../shared/boot-table.service';
 
 @Component({
   templateUrl: './boot-table.component.html',
@@ -24,7 +25,7 @@ export class BootTableComponent implements OnInit {
   ngOnInit(): void {
 
     
-      this.http.get('./data.json')
+      this.http.get('../shared/data.json')
       this.data = this._bootTableService.getItemsFromData()
 
   }
