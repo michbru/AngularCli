@@ -11,7 +11,7 @@ import { SlideEditComponent } from './slide-edit/slide-edit.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: SlideEditComponent
   },
   {
     path: 'home',
