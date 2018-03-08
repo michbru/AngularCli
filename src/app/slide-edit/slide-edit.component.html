@@ -111,12 +111,20 @@
                           <input type="text" class="form-control" name="age" [(ngModel)]="item.age" #age="ngModel" required>
                           <div class="alert alert-danger" *ngIf="age.dirty && age.invalid">age is required</div>
                         </div>
+                        <div class="row">
+                        <div class="form-group col-xs-9 col-md-3">
+                          <input type="button" class="btn btn-primary" value="Save" (click)="saveItem()">
+                          <input type="button" class="btn btn-warning" value="Cancel" (click)="nextClick('aaLink')">
+                        </div>
+                        <div class="col-xs-3 col-md-9">
 
+                        </div>
 
+                        </div> 
 
                   <p>
-                      <input type="button" class="btn btn-primary" value="Save" (click)="saveItem()">
-                      <input type="button" class="btn btn-warning" value="Cancel" (click)="nextClick('aaLink')">
+                
+                    
           
                     </p>
             </form>
