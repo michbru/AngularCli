@@ -73,7 +73,6 @@ export class ProductsComponent implements OnInit {
       this.itemEdit = {} as Product;
       this.myForm.reset();
 
-      //this.myForm.resetForm();
     }
 
   }

@@ -17,11 +17,15 @@ import { HomeComponent } from './home/home.component';
 import { SoonComponent } from './soon/soon.component';
 import { StepsComponent } from './steps/steps.component';
 import { SlideEditComponent } from './slide-edit/slide-edit.component';
+import { GuestbookComponent } from './guestbook/guestbook.component';
+import {GuestbookService } from './guestbook/guestbook.service';
+import { EmployeesComponent } from './employees/employees.component';
+import {EmployeeService } from './employees/employee.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BootTableComponent,DataFilterPipe, ProductsComponent, HomeComponent, SoonComponent, StepsComponent, SlideEditComponent
+    BootTableComponent,DataFilterPipe, ProductsComponent, HomeComponent, SoonComponent, StepsComponent, SlideEditComponent, GuestbookComponent, EmployeesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,7 @@ import { SlideEditComponent } from './slide-edit/slide-edit.component';
     ReactiveFormsModule,
     DataTableModule,
   ],
-  providers: [BootTableService, ProductsService],
+  providers: [BootTableService, ProductsService, GuestbookService, EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
