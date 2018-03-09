@@ -8,6 +8,7 @@ import {StepsComponent} from './steps/steps.component';
 import { SlideEditComponent } from './slide-edit/slide-edit.component';
 import { GuestbookComponent } from './guestbook/guestbook.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { RedComponent } from './red/red.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,11 @@ const routes: Routes = [
   {
     path: 'guest',
     component: GuestbookComponent,
+  },
+  
+  {
+    path: 'red',
+    component: RedComponent,
   },
   { path: '**', component: SoonComponent }
 ];

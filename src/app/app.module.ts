@@ -21,11 +21,12 @@ import { GuestbookComponent } from './guestbook/guestbook.component';
 import {GuestbookService } from './guestbook/guestbook.service';
 import { EmployeesComponent } from './employees/employees.component';
 import {EmployeeService } from './employees/employee.service';
+import { RedComponent } from './red/red.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BootTableComponent,DataFilterPipe, ProductsComponent, HomeComponent, SoonComponent, StepsComponent, SlideEditComponent, GuestbookComponent, EmployeesComponent
+    BootTableComponent,DataFilterPipe, ProductsComponent, HomeComponent, SoonComponent, StepsComponent, SlideEditComponent, GuestbookComponent, EmployeesComponent, RedComponent
   ],
   imports: [
     BrowserModule,
